@@ -35,7 +35,7 @@ export async function main() {
         {title: 'Binary Counting', statement: `
                 <p>Count in binary starting from <math><mn>00000000</mn></math> (<math><mn>8</mn></math> digits) to 
                 <math><mn>11111111</mn></math>, one binary number per line.</p>
-                <p>Your output should thus have <math><msup><mn>2</mn><mn>8</mn></msup><mo>=</mo><mn>100</mn></math>
+                <p>Your output should thus have <math><msup><mn>2</mn><mn>8</mn></msup><mo>=</mo><mn>256</mn></math>
                 lines like so: 00000000, 00000001, 00000010, 00000011, …</p>
                 <details>
                     <summary>Hints</summary>
