@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Blockly exercises</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-body">
+    <div id="main-layout">
+        <section id="left-pane">
+            <div id="workBench-wrap">
+                <div id="workBench"></div>
+            </div>
+        </section>
+        <div id="right-pane">
+            <div id="controls">
+                <button id="runButton">Run ▶︎</button>
+                <button id="saveButton">Save ↧</button>
+                <button id="fileLoadButton">Load ↥</button>
+                <button id="pythonButton">View as Python</button>
+                <input id="fileLoad" type="file" accept="application/json" style="display:none">
+            </div>
+            <div id="problemSelect-wrap">
+                <label for="problemSelect">Problem:</label>
+                <select id="problemSelect">
+                </select>
+            </div>
+            <div id="problemStatement">
+            </div>
+            <pre id="terminal"></pre>
+        </div>
+    </div>
+    <div id="win-show"></div>
+
+    <script type="module">
+        import {main} from "./src/main.js";
+        await main();
+    </script>
+</body>
+</html>
